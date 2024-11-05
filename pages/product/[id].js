@@ -60,9 +60,9 @@ const ProductDetail = () => {
       <Header />
       <div className="flex flex-col items-center my-8">
         {product ? (
-          <div className="flex flex-row max-w-4xl w-full mt-16 bg-white overflow-hidden">
+          <div className="flex flex-col sm:flex-row max-w-4xl w-full mt-16 bg-white overflow-hidden">
             {/* Left side: Product Image */}
-            <div className="w-1/2 p-4 flex justify-center items-center">
+            <div className="w-full sm:w-1/2 p-4 flex justify-center items-center">
               <Image
                 src={product.image}
                 alt={product.name}
@@ -73,7 +73,7 @@ const ProductDetail = () => {
             </div>
 
             {/* Right side: Product Details */}
-            <div className="w-1/2 p-8 flex flex-col justify-between">
+            <div className="w-full sm:w-1/2 p-8 flex flex-col justify-between">
               <div>
                 <h2 className="text-3xl font-bold text-gray-800 mb-4">
                   {product.name}
@@ -88,9 +88,9 @@ const ProductDetail = () => {
                 </p>
 
                 {/* Size Selection */}
-                <div className="mt-6 flex flex-row items-center">
-                  <h3 className="text-lg font-semibold mb-2 mr-10">Size:</h3>
-                  <div className="flex gap-2">
+                <div className="mt-6 flex flex-col sm:flex-row items-center">
+                  <h3 className="text-lg font-semibold mb-2 sm:mr-10">Size:</h3>
+                  <div className="flex gap-2 flex-wrap">
                     {["XS", "S", "M", "L", "XL"].map((size) => (
                       <button
                         key={size}

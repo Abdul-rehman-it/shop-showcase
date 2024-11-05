@@ -11,9 +11,9 @@ export default function Header() {
 
   return (
     <header
-    className={`flex flex-col md:flex-row items-center justify-between w-full max-w-full mx-auto px-6 sm:px-4 md:px-0 md:pl-28 md:pr-32 fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    className={`flex flex-col md:flex-row items-center justify-between w-full max-w-[100vw] mx-auto px-6 sm:px-4 md:px-0 md:pl-28 md:pr-32 fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isMenuOpen ? "bg-black backdrop-blur-md" : "bg-black"
-    } space-y-4 md:space-y-0 -left-[16px] md:left-0`}
+    } space-y-4 md:space-y-0 right-[11px] md:left-0`}
   >
       <div className="flex items-center justify-between w-full md:w-auto space-x-4 relative">
         {/* Logo on the left */}
