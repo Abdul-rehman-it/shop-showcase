@@ -1,15 +1,17 @@
 import React from "react";
+import Image from "next/image"; // Import Image from Next.js
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Importing arrow icons
-import Image from "next/image";
+
 export default function Testimonials() {
   return (
     <section className="flex items-stretch justify-between p-0">
       {/* Left side - Image */}
-      <div className="w-1/2">
+      <div className="w-1/2 relative"> {/* Added relative positioning */}
         <Image
           src="https://img.freepik.com/premium-photo/blue-shades-lake-mountains-landscape-nature-background_1234738-236399.jpg?semt=ais_hybrid" // Replace with your image URL
           alt="Testimonial"
-          className="w-full h-full object-cover" // Ensures the image covers its container
+          layout="fill" // Fill the parent container
+          objectFit="cover" // Cover ensures the image maintains its aspect ratio
         />
       </div>
 
@@ -25,8 +27,6 @@ export default function Testimonials() {
         <cite className="block text-gray-600 text-white">CEO Company XYZ</cite>
         {/* Arrow Buttons - Aligned to the left */}
         <div className="flex justify-start mt-6 w-full">
-          {" "}
-          {/* Added mt-6 for margin-top */}
           <button className="p-2 pt-10 bg-transparent border-none cursor-pointer mr-2">
             <FaArrowLeft className="text-gray-400 text-2xl" />{" "}
             {/* Changed color to gray */}

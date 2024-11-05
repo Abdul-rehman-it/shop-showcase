@@ -1,6 +1,6 @@
 import React from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Importing arrow icons
-import Image from "next/image";
+
 export default function BlogSection() {
   return (
     <section className="flex items-stretch justify-between p-0">
@@ -35,7 +35,7 @@ export default function BlogSection() {
 
       {/* Left side - Image */}
       <div className="w-1/2">
-        <Image
+        <img
           src="https://media.istockphoto.com/id/875281644/photo/frozen-road-hokaido-japan.jpg?s=612x612&w=0&k=20&c=dm1VbRCocAESbipf2njN_MFoF-6WNheIJDblL7Y-Dbo=" // Replace with your image URL
           alt="Testimonial"
           className="w-full h-full object-cover" // Ensures the image covers its container

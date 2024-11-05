@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "./NavBar";
+import Navbar from "./Navbar";
 import Setting from "./Setting";
 
 export default function Header() {

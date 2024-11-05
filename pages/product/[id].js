@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import Image from "next/image"; // Import Image from next/image
+import Image from "next/image"; // Import Next.js Image component
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
@@ -30,7 +30,7 @@ const ProductDetail = () => {
     },
     {
       id: 4,
-      name: "Dress Shoes ",
+      name: "Dress Shoes",
       price: "$39.99",
       image:
         "https://png.pngtree.com/png-vector/20240531/ourmid/pngtree-brown-leather-dress-shoes-png-image_12586933.png",
@@ -66,8 +66,8 @@ const ProductDetail = () => {
               <Image
                 src={product.image}
                 alt={product.name}
-                width={500}         // Set width for image optimization
-                height={500}        // Set height for image optimization
+                width={500}  // Specify width to maintain layout
+                height={500} // Specify height to maintain layout
                 className="object-cover h-96 w-auto"
               />
             </div>

@@ -1,8 +1,7 @@
-import Image from "next/image";
-
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Heading from "../Heading/Heading";
 import { useRouter } from "next/router";
+import Image from "next/image"; // Import Image from Next.js
 
 export default function FeaturedProducts() {
   const router = useRouter();
@@ -96,11 +95,15 @@ export default function FeaturedProducts() {
               className="bg-white rounded-lg w-full md:w-40 flex flex-col items-center p-4 cursor-pointer"
               onClick={() => handleProductClick(product.id)}
             >
-              <Image
-                src={product.image}
-                alt={product.name}
-                className="w-full h-32 object-cover rounded"
-              />
+              <div className="relative w-full h-32"> {/* Set relative position for Image component */}
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  layout="fill" // Make the image fill the parent container
+                  objectFit="cover" // Cover ensures the image maintains its aspect ratio
+                  className="rounded" // Rounded corners for the image
+                />
+              </div>
               <h3 className="text-lg font-semibold mt-2">{product.name}</h3>
               <p className="text-gray-600">{product.price}</p>
             </div>
