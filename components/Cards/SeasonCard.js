@@ -4,7 +4,7 @@ const SeasonCard = () => {
   return (
     <div className="bg-[rgb(13,32,39)] p-4 sm:p-6 shadow-md h-[350px] z-10 -ml-2 flex flex-col justify-center items-center">
       <div className="w-full max-w-xs sm:max-w-[320px] text-white text-center flex flex-col items-center">
-        <h3 className="text-xs sm:text-sm md:text-base">End of Season</h3>
+        <h3 className="text-xs sm:text-sm md:text-base text-white">End of Season</h3>
         <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl text-white mt-1">
           Sale
         </h2>

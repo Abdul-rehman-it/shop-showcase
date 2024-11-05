@@ -11,23 +11,24 @@ const Footer = () => {
         </div>
         <h3 className="font-bold">NewsLetter</h3>
         {/* Email Subscription Field */}
-        <div className="flex justify-center mb-16">
-          <div className="flex items-center w-full max-w-md">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="w-full p-2  text-gray-700 focus:outline-none border-b-2 border-gray-500"
-              style={{
-                borderTop: "none",
-                borderLeft: "none",
-                borderRight: "none",
-              }}
-            />
-            <button className="text-black px-4 py-2 border-b-2 border-gray-500 hover:text-[#8c5d47] transition-colors duration-200">
-              Subscribe
-            </button>
-          </div>
-        </div>
+        <div className="flex justify-center mb-8 sm:mb-16">
+  <div className="flex items-center w-full max-w-xs sm:max-w-md"> {/* Adjust max width */}
+    <input
+      type="email"
+      placeholder="Enter your email"
+      className="w-full p-1 sm:p-2 text-gray-700 text-sm sm:text-base focus:outline-none border-b-2 border-gray-500"
+      style={{
+        borderTop: "none",
+        borderLeft: "none",
+        borderRight: "none",
+      }}
+    />
+    <button className="text-black px-2 sm:px-4 py-1 sm:py-2 text-sm sm:text-base border-b-2 border-gray-500 hover:text-[#8c5d47] transition-colors duration-200">
+      Subscribe
+    </button>
+  </div>
+</div>
+
       </div>
 
       <FooterNav textColor="text-gray-500" />

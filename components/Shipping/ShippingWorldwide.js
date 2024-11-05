@@ -11,7 +11,7 @@ export default function ShippingWorldwide() {
         description="We offer worldwide shipping to ensure your products reach you no matter where you are."
       />
       <SimpleCard
-        image="https://cdn.creazilla.com/cliparts/7772614/silver-medal-clipart-lg.png"
+        image="https://www.transparentpng.com/thumb/bronze-medal-png/grey-bronze-medal-png-30.png"
         heading="Fast Delivery"
         description="Our fast delivery service ensures you receive your orders quickly and efficiently."
       />

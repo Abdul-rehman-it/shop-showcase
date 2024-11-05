@@ -11,10 +11,10 @@ export default function Header() {
 
   return (
     <header
-      className={`flex flex-col md:flex-row items-center justify-between w-full p-4 md:pl-28 md:pr-32 fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isMenuOpen ? "bg-black backdrop-blur-md" : "bg-black"
-      } space-y-4 md:space-y-0 box-border md:px-0 px-4`} // Adjusted padding for mobile
-    >
+    className={`flex flex-col md:flex-row items-center justify-between w-full max-w-full mx-auto px-6 sm:px-4 md:px-0 md:pl-28 md:pr-32 fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isMenuOpen ? "bg-black backdrop-blur-md" : "bg-black"
+    } space-y-4 md:space-y-0 -left-[16px] md:left-0`}
+  >
       <div className="flex items-center justify-between w-full md:w-auto space-x-4 relative">
         {/* Logo on the left */}
         <div className="logo bg-gray-600 text-white text-2xl w-10 font-bold pt-4">
@@ -55,7 +55,7 @@ export default function Header() {
 
       {/* Show Navbar and Setting on mobile if menu is open */}
       {isMenuOpen && (
-        <div className="absolute top-16 left-0 right-0 bg-black p-4 md:hidden space-y-2">
+        <div className="absolute top-16 left-0 right-0 bg-black p-4 md:hidden space-y-2 w-full px-0">
           <Navbar textColor="text-gray-300" />
           <Setting />
         </div>

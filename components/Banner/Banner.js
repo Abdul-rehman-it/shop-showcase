@@ -6,7 +6,7 @@ export default function Banner() {
   return (
     <section className="relative w-full h-screen m-0 p-0 -mt-36 md:-mt-0">
       {/* Apply -mt-24 (which is -96px) on mobile */}
-      <div className="relative w-full h-full">
+      <div className="relative w-full h-full z-0"> {/* Set z-index to 0 for background */}
         <Image
           src="https://www.pixelstalk.net/wp-content/uploads/images6/Black-And-White-Aesthetic-Backgrounds-Free-Download-Moutain-620x349.png"
           alt="New Season Arrivals"
@@ -16,7 +16,7 @@ export default function Banner() {
         />
       </div>
       <Header />
-      <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white">
+      <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white z-10"> {/* Set z-index to 10 to bring text in front */}
         <h1 className="text-2xl md:text-3xl text-white text-center">
           New Season Arrivals
         </h1>
