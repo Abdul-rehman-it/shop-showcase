@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header,
+footer,
+main,
+section {
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+.banner,
+.sale-banner,
+.new-arrivals,
+.categories,
+.featured-products,
+.testimonials,
+.blog-section {
+  margin-bottom: 40px;
+}
+
+.product,
+.category-card,
+.product-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+}
