@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Image from "next/image"; // Import Image from next/image
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
@@ -62,9 +63,11 @@ const ProductDetail = () => {
           <div className="flex flex-row max-w-4xl w-full mt-16 bg-white overflow-hidden">
             {/* Left side: Product Image */}
             <div className="w-1/2 p-4 flex justify-center items-center">
-              <img
+              <Image
                 src={product.image}
                 alt={product.name}
+                width={500}         // Set width for image optimization
+                height={500}        // Set height for image optimization
                 className="object-cover h-96 w-auto"
               />
             </div>

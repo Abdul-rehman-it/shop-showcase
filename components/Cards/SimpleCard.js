@@ -1,10 +1,10 @@
 import React from "react";
-
+import Image from "next/image";
 export default function SimpleCard({ image, heading, description }) {
   return (
     <div className="max-w-xs bg-white rounded-lg mt-20 overflow-hidden p-4">
       {/* Image */}
-      <img
+      <Image
         src={image}
         alt="Card Image"
         className="w-22 h-20 object-cover mx-auto" // Set a fixed size for the image without margin top

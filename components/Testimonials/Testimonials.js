@@ -1,12 +1,12 @@
 import React from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Importing arrow icons
-
+import Image from "next/image";
 export default function Testimonials() {
   return (
     <section className="flex items-stretch justify-between p-0">
       {/* Left side - Image */}
       <div className="w-1/2">
-        <img
+        <Image
           src="https://img.freepik.com/premium-photo/blue-shades-lake-mountains-landscape-nature-background_1234738-236399.jpg?semt=ais_hybrid" // Replace with your image URL
           alt="Testimonial"
           className="w-full h-full object-cover" // Ensures the image covers its container

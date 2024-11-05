@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function NewArrivalProduct({ product }) {
   return (
     <div className="product-card relative">
@@ -7,7 +8,7 @@ export default function NewArrivalProduct({ product }) {
       </div>
 
       {/* Product Image */}
-      <img
+      <Image
         src={product.imageUrl} // Use the imageUrl from the product object
         alt={product.name}
         className="w-[250px] h-[250px] object-cover"

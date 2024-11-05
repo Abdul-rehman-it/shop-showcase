@@ -1,12 +1,12 @@
 import { FaArrowDown } from "react-icons/fa";
 import Header from "../Header/Header";
-
+import Image from "next/image";
 export default function Banner() {
   return (
     <section className="relative w-full h-screen m-0 p-0 -mt-36 md:-mt-0">
       {" "}
       {/* Apply -mt-24 (which is -96px) on mobile */}
-      <img
+      <Image
         src="https://www.pixelstalk.net/wp-content/uploads/images6/Black-And-White-Aesthetic-Backgrounds-Free-Download-Moutain-620x349.png"
         alt="New Season Arrivals"
         className="object-cover w-full h-full"
