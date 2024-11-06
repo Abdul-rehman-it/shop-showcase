@@ -1,6 +1,6 @@
 
-import NewArrivalsHeader from "./NewArrivalsHeader"; // Import the header component
-import ProductList from "../Cards/NewArrivalsCard"; // Import the product list component
+import NewArrivalsHeader from "./NewArrivalsHeader"; 
+import ProductList from "../Cards/NewArrivalsCard"; 
 
 export default function NewArrivals() {
   const products = [
@@ -29,8 +29,8 @@ export default function NewArrivals() {
 
   return (
     <section className="new-arrivals flex flex-col items-center p-4 md:ml-16 md:mr-10 md:flex-row md:items-start space-y-4 md:space-y-0 md:space-x-4">
-      <NewArrivalsHeader /> {/* New header component */}
-      <ProductList products={products} /> {/* New product list component */}
+      <NewArrivalsHeader />
+      <ProductList products={products} /> 
     </section>
   );
 }

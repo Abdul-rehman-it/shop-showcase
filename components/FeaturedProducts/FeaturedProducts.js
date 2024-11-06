@@ -1,4 +1,3 @@
-
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Heading from "../Heading/Heading";
 import { useRouter } from "next/router";
@@ -59,13 +58,12 @@ export default function FeaturedProducts() {
   };
 
   const handleProductClick = (id) => {
-    router.push(`/product/${id}`); // Navigate to the product detail page
+    router.push(`/product/${id}`);
   };
 
   return (
     <div className="flex flex-col items-center my-8">
-      {/* Heading */}
-      <div className="text-center">
+      <div className="text-center pt-8 md:pt-0"> {/* Added responsive padding */}
         <Heading
           title="Featured"
           subtitle="Products"
@@ -77,14 +75,11 @@ export default function FeaturedProducts() {
         />
       </div>
       <div className="flex items-center justify-center mt-4">
-        {/* Container for left arrow */}
         <div className="p-2 border border-gray-300 bg-white shadow-md mr-10 hidden md:flex items-center justify-center">
           <button onClick={() => scroll("left")}>
             <FaArrowLeft className="text-2xl" />
           </button>
         </div>
-
-        {/* Product Carousel */}
         <div
           id="product-carousel"
           className="flex flex-col md:flex-row md:overflow-x-auto space-y-4 md:space-y-0 md:space-x-4 scrollbar-hide w-full md:w-auto"
@@ -105,16 +100,12 @@ export default function FeaturedProducts() {
             </div>
           ))}
         </div>
-
-        {/* Container for right arrow */}
         <div className="p-2 border border-gray-300 bg-white shadow-md ml-10 hidden md:flex items-center justify-center">
           <button onClick={() => scroll("right")}>
             <FaArrowRight className="text-2xl" />
           </button>
         </div>
       </div>
-
-      {/* Simple Divider Lines */}
       <div className="flex flex-row gap-2 mb-20 mt-12 items-center">
         <div className="w-6 h-1 bg-gray-300 mb-1" />
         <div className="w-16 h-1 bg-gray-300 mb-1" />

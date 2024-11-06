@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Navbar({ textColor = "text-gray-300" }) {
   return (
-    <nav className="w-full md:max-w-[90vw] md:px-4 px-2 mx-auto"> {/* Limited width on mobile */}
+    <nav className="w-full md:max-w-[90vw] md:px-4 px-2 mx-auto">
       <ul className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 max-w-[90%] md:max-w-full mx-auto">
         {[
           { name: "Home", link: "/" },

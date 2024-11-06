@@ -5,14 +5,12 @@ const Footer = () => {
   return (
     <footer className="text-gray-300 pl-0 pr-0 mt-20 py-10 pb-0">
       <div className="text-center mb-8">
-        {/* Logo */}
         <div className="text-4xl font-bold text-white bg-gray-600 inline-block pt-4 pr-2  mb-6">
           Lu
         </div>
         <h3 className="font-bold">NewsLetter</h3>
-        {/* Email Subscription Field */}
         <div className="flex justify-center mb-8 sm:mb-16">
-  <div className="flex items-center w-full max-w-xs sm:max-w-md"> {/* Adjust max width */}
+  <div className="flex items-center w-full max-w-xs sm:max-w-md">
     <input
       type="email"
       placeholder="Enter your email"

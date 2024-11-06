@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import Image from "next/image"; // Import Next.js Image component
+import Image from "next/image";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
@@ -61,18 +61,15 @@ const ProductDetail = () => {
       <div className="flex flex-col items-center my-8">
         {product ? (
           <div className="flex flex-col sm:flex-row max-w-4xl w-full mt-16 bg-white overflow-hidden">
-            {/* Left side: Product Image */}
             <div className="w-full sm:w-1/2 p-4 flex justify-center items-center">
               <Image
                 src={product.image}
                 alt={product.name}
-                width={500}  // Specify width to maintain layout
-                height={500} // Specify height to maintain layout
+                width={500} 
+                height={500}
                 className="object-cover h-96 w-auto"
               />
             </div>
-
-            {/* Right side: Product Details */}
             <div className="w-full sm:w-1/2 p-8 flex flex-col justify-between">
               <div>
                 <h2 className="text-3xl font-bold text-gray-800 mb-4">
@@ -86,8 +83,6 @@ const ProductDetail = () => {
                   with attention to detail, this item is both stylish and
                   comfortable.
                 </p>
-
-                {/* Size Selection */}
                 <div className="mt-6 flex flex-col sm:flex-row items-center">
                   <h3 className="text-lg font-semibold mb-2 sm:mr-10">Size:</h3>
                   <div className="flex gap-2 flex-wrap">
@@ -102,8 +97,6 @@ const ProductDetail = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Go to Shop Button */}
               <button
                 className="mt-8 bg-green-900 text-white py-3 px-6 rounded-md hover:bg-green-700 transition"
                 onClick={() => (window.location.href = "#")}
@@ -116,8 +109,6 @@ const ProductDetail = () => {
           <p>Product not found.</p>
         )}
       </div>
-
-      {/* Footer - Full Width */}
       <div className="w-full">
         <Footer />
       </div>
