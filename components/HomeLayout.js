@@ -15,14 +15,25 @@ export default function HomeLayout() {
     <div>
       <Banner id="banner" />
       <SeasonSection id="season-section" />
-      <NewArrivals id="new-arrivals" />
+      <section id="new-arrivals">
+        <NewArrivals />
+      </section>
       <ThreeImagesShow id="three-images-show" />
-      <Categories id="categories" />
-      <FeaturedProducts id="featured-products" />
-      <Testimonials id="testimonials" />
+      <section id="categories">
+      <Categories/>
+      </section>
+
+      <section id="FeaturedProducts">
+        <FeaturedProducts />
+      </section>
+      <section id="testimonials">
+        <Testimonials />
+      </section>
       <BlogSection id="blog-section" />
       <ShippingWorldwide id="shipping-worldwide" />
-      <Footer id="footer" />
+      <section id="footer">
+        <Footer/>
+      </section>
     </div>
   );
 }

@@ -9,7 +9,7 @@ export default function Navbar({ textColor = "text-gray-300" }) {
           { name: "Home", link: "/" },
           { name: "All New", link: "/#new-arrivals" },
           { name: "Categories", link: "/#categories" },
-          { name: "Featured", link: "/#featured-products" },
+          { name: "Featured", link: "/#FeaturedProducts" },
           { name: "Testimonials", link: "/#testimonials" },
           { name: "Footer", link: "/#footer" },
         ].map((item, index) => (

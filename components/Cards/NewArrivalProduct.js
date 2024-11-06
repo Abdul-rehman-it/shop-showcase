@@ -7,13 +7,13 @@ export default function NewArrivalProduct({ product }) {
       <div className="absolute top-2 left-2 bg-gray-700 text-white text-xs px-4 py-1">
         Sale
       </div>
-      <div className="relative w-[250px] h-[250px]">
+      <div className="relative w-[300px] h-[300px] sm:w-[250px] sm:h-[250px]"> 
         <Image
           src={product.imageUrl}
           alt={product.name}
-          layout="fill" 
-          objectFit="cover" 
-          className="rounded" 
+          layout="fill"
+          objectFit="cover"
+          className="rounded"
         />
       </div>
       <div className="text-gray-600 mt-1 text-3xl">{"★ ★ ★ ★ ★"}</div>

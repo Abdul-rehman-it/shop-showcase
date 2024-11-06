@@ -3,7 +3,7 @@ import Heading from "../Heading/Heading";
 
 const NewArrivalsHeader = () => {
   return (
-    <div className="ml-10 text-left w-56 mr-4">
+    <div className="text-left w-64 md:w-56 mr-4 md:ml-10 ml-0">
       <Heading
         title="New"
         subtitle="Arrivals"
@@ -13,9 +13,9 @@ const NewArrivalsHeader = () => {
         subtitleSize="4xl"
         subtitleBg="rgb(170,163,149)"
       />
-      <p className="text-gray-700 mt-10">
+      <p className="text-gray-700 mt-6">
         Cras convalis lacus orci, tristique tincidunt magna consequat in. In vel
-        pulvinar est, at euismod libero.
+        pulvinar est.
       </p>
     </div>
   );

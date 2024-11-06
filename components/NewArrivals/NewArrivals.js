@@ -1,4 +1,3 @@
-
 import NewArrivalsHeader from "./NewArrivalsHeader"; 
 import ProductList from "../Cards/NewArrivalsCard"; 
 
@@ -28,7 +27,7 @@ export default function NewArrivals() {
   ];
 
   return (
-    <section className="new-arrivals flex flex-col items-center p-4 md:ml-16 md:mr-10 md:flex-row md:items-start space-y-4 md:space-y-0 md:space-x-4">
+    <section className="new-arrivals flex flex-col items-center p-2 md:ml-8 md:mr-16 md:flex-row md:items-start space-y-4 md:space-y-0 md:space-x-4">
       <NewArrivalsHeader />
       <ProductList products={products} /> 
     </section>
