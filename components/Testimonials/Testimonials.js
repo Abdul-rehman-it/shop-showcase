@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image"; 
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; 
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export default function Testimonials() {
   return (
     <section className="flex flex-col md:flex-row items-stretch justify-between p-0">
-      <div className="w-full md:w-1/2 relative min-h-[270px]">
+      <div className="w-full md:w-1/2 relative h-64 md:h-[390px]">
         <Image
           src="https://img.freepik.com/premium-photo/blue-shades-lake-mountains-landscape-nature-background_1234738-236399.jpg?semt=ais_hybrid" // Replace with your image URL
           alt="Testimonial"

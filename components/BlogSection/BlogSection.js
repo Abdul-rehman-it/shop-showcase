@@ -3,7 +3,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export default function BlogSection() {
   return (
-    <section className="flex flex-col md:flex-row items-stretch justify-between p-0">
+    <section className="flex flex-col   md:flex-row items-stretch justify-between p-5 -mt-10">
       <div className="w-full md:w-1/2 p-10 bg-[#361005] text-white flex flex-col justify-between">
         <div>
           <h2 className="text-3xl font-bold mb-4 text-white">From Our Blog</h2>
