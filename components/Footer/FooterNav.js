@@ -16,7 +16,7 @@ export default function FooterNav({ textColor = "text-gray-300" }) {
           <li key={index} className="relative group w-auto">
             <Link href={item.link} scroll={item.name === "Home"} legacyBehavior>
               <a
-                className={`${textColor} hover:text-gray-400 transition-colors duration-200 block text-center text-[8px] sm:text-[9px] md:text-sm`} // Further reduced font sizes for mobile
+                className={`${textColor} hover:text-gray-400 transition-colors duration-200 block text-center text-[6px] sm:text-[9px] md:text-sm`} // Further reduced font sizes for mobile
               >
                 {item.name}
               </a>

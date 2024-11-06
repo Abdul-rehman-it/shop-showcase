@@ -20,7 +20,7 @@ export default function MenCategory() {
           <img
             src="https://png.pngtree.com/png-vector/20230906/ourmid/pngtree-wristwatch-analog-classic-brown-leather-strap-watch-png-image_10001801.png"
             alt="Woman Shoes"
-            className="w-1/3 mb-1 shadow-[0_4px_8px_rgba(0,0,0,0.2)]" 
+            className="w-1/3 mb-1  " 
           />
           <div className="text-left ml-10 text-black">
             <h3 className="font-bold leading-tight">
@@ -34,7 +34,7 @@ export default function MenCategory() {
           <img
             src="https://png.pngtree.com/png-vector/20240531/ourmid/pngtree-brown-leather-dress-shoes-png-image_12586933.png"
             alt="Woman Bag"
-            className="w-1/3 mb-1 shadow-[0_4px_8px_rgba(0,0,0,0.2)]" 
+            className="w-1/3 mb-1  " 
           />
           <div className="text-left ml-10 text-black">
             <h3 className="font-bold leading-tight">

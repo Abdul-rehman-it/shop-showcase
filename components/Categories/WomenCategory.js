@@ -7,7 +7,7 @@ export default function WomenCategory() {
           <img
             src="https://pngimg.com/d/women_shoes_PNG7467.png"
             alt="Woman Shoes"
-            className="w-1/3 mb-1 shadow-[0_4px_8px_rgba(0,0,0,0.2)]"
+            className="w-1/3 mb-1  "
           />
           <div className="text-left ml-10 text-black">
             <h3 className="font-bold leading-tight">
@@ -21,7 +21,7 @@ export default function WomenCategory() {
           <img
             src="https://www.pngarts.com/files/12/Ladies-Bag-PNG-Free-Download.png"
             alt="Woman Bag"
-            className="w-1/3 mb-1 shadow-[0_4px_8px_rgba(0,0,0,0.2)]" 
+            className="w-1/3 mb-1  " 
           />
           <div className="text-left ml-10 text-black">
             <h3 className="font-bold leading-tight">

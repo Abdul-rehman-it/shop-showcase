@@ -13,7 +13,6 @@ export default function NewArrivalProduct({ product }) {
           alt={product.name}
           layout="fill"
           objectFit="cover"
-          className="rounded"
         />
       </div>
       
