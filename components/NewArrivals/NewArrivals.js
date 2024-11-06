@@ -27,9 +27,10 @@ export default function NewArrivals() {
   ];
 
   return (
-    <section className="new-arrivals flex flex-col items-center p-2 md:ml-8 md:mr-16 md:flex-row md:items-start space-y-4 md:space-y-0 md:space-x-4">
+    <section className="new-arrivals flex flex-col md:flex-row items-stretch p-0 md:p-2 md:ml-8 md:mr-16 space-y-4 md:space-y-0 md:space-x-4">
+
       <NewArrivalsHeader />
-      <ProductList products={products} /> 
+      <ProductList products={products} />
     </section>
   );
 }

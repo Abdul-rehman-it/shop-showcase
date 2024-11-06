@@ -63,7 +63,7 @@ export default function FeaturedProducts() {
 
   return (
     <div className="flex flex-col items-center my-8">
-      <div className="text-center pt-8 md:pt-0"> {/* Added responsive padding */}
+      <div className="text-center pt-8 md:pt-0"> 
         <Heading
           title="Featured"
           subtitle="Products"

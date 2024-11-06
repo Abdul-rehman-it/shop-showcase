@@ -3,7 +3,7 @@ import Heading from "../Heading/Heading";
 
 const NewArrivalsHeader = () => {
   return (
-    <div className="text-left w-64 md:w-56 mr-4 md:ml-10 ml-0">
+    <div className="text-left w-full md:w-56 mr-4 md:ml-10 ml-0">
       <Heading
         title="New"
         subtitle="Arrivals"
